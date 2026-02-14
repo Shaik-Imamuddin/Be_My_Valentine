@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: linear-gradient(180deg, #ffffff, #fff5f7);
+    padding: 40px 35px;
+    border-radius: 24px;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow:
+        0 20px 40px rgba(216, 27, 96, 0.25),
+        inset 0 0 0 2px rgba(255, 182, 193, 0.4);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    font-size: 2.3rem;
+    color: #d81b60;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input {
+    width: 65%;
+    padding: 9px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    border: 2px solid #ffb6c1;
+    outline: none;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #e91e63;
+}
+
+
+
+.propose-btn {
+    background: linear-gradient(135deg, #ff4f81, #e91e63);
+    color: white;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.propose-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.45);
+}
+
+.quote {
+    font-size: 1.45rem;
+    color: #c2185b;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    padding: 0 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+button {
+    width: 140px;
+    height: 46px;
+    font-size: 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accept-btn {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: white;
+    box-shadow: 0 8px 18px rgba(67, 160, 71, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accept-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 26px rgba(67, 160, 71, 0.55);
+}
+
+.reject-btn {
+    background: linear-gradient(135deg, #ff8a80, #e57373);
+    color: white;
+    opacity: 0.9;
+    pointer-events: none;
+    position: relative;
+    transition:
+        left 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        top 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reject-slot {
+    width: 140px;
+    height: 46px;
+}
